@@ -1,0 +1,28 @@
+{
+    "reports": [
+        {
+            "date": "stats.start",
+            "database": "WebStudioE2EProject" , 
+            "product": {
+                "OS": "Windows 10 Pro 1809 (17763.195)",
+                "4D": "4D v17 R5 build 17R5.232656 (A1)",
+                "branch": "17R5",
+                "build": "232656",
+                "bitness": ""
+            },
+            "unit": {
+                "description": "results[0].suites[0].title",
+                "developer": "@4d.com"
+            },
+            "runConfig": "4D Local mode",
+            "runCompiled": {
+                "testRun": 1,
+                "testCases": [],
+                "assert": 2,
+                "duration": 0.505,
+                "result": "successful"
+            },
+            "batch": "successful"
+        }
+    ]
+}

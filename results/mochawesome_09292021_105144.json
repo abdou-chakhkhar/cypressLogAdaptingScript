@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-29T09:51:36.758Z",
+    "end": "2021-09-29T09:51:44.675Z",
+    "duration": 7917,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4037456a-1350-4c70-bc73-81456fdd0f34",
+      "title": "",
+      "fullFile": "cypress/tests/header.spec.ts",
+      "file": "cypress/tests/header.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "30745349-7815-4fca-bed7-9720b9d4e09a",
+          "title": "AppHeader Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "the 4D logo appear in the header",
+              "fullTitle": "AppHeader Tests the 4D logo appear in the header",
+              "timedOut": null,
+              "duration": 1617,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HeaderObjectModel_1.header.does4DLogoAppear();",
+              "err": {},
+              "uuid": "f6074a7d-f114-4b71-be8a-4642164a2e8e",
+              "parentUUID": "30745349-7815-4fca-bed7-9720b9d4e09a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "the project name appear in the header",
+              "fullTitle": "AppHeader Tests the project name appear in the header",
+              "timedOut": null,
+              "duration": 411,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HeaderObjectModel_1.header.hasProjectName(constants_1.PROJECT_NAME);",
+              "err": {},
+              "uuid": "e6f12e87-3ef3-4f49-a096-c9d900e3f5fd",
+              "parentUUID": "30745349-7815-4fca-bed7-9720b9d4e09a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "'What to Expect ...' Link works fine",
+              "fullTitle": "AppHeader Tests 'What to Expect ...' Link works fine",
+              "timedOut": null,
+              "duration": 274,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HeaderObjectModel_1.header.WhatToExpectLink();",
+              "err": {},
+              "uuid": "a3adfe59-26ad-4626-8ab0-2110fd0aea13",
+              "parentUUID": "30745349-7815-4fca-bed7-9720b9d4e09a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "'Save all' button works fine",
+              "fullTitle": "AppHeader Tests 'Save all' button works fine",
+              "timedOut": null,
+              "duration": 3099,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HeaderObjectModel_1.header.saveAllButtonFunction();",
+              "err": {},
+              "uuid": "962e56c7-0c7f-44d4-879e-24bd100ffc7a",
+              "parentUUID": "30745349-7815-4fca-bed7-9720b9d4e09a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "'Preview' button works fine",
+              "fullTitle": "AppHeader Tests 'Preview' button works fine",
+              "timedOut": null,
+              "duration": 89,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HeaderObjectModel_1.header.previewButtonFunction();",
+              "err": {},
+              "uuid": "25255cca-4a46-436a-8e5f-d0d740b3f332",
+              "parentUUID": "30745349-7815-4fca-bed7-9720b9d4e09a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f6074a7d-f114-4b71-be8a-4642164a2e8e",
+            "e6f12e87-3ef3-4f49-a096-c9d900e3f5fd",
+            "a3adfe59-26ad-4626-8ab0-2110fd0aea13",
+            "962e56c7-0c7f-44d4-879e-24bd100ffc7a",
+            "25255cca-4a46-436a-8e5f-d0d740b3f332"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5490,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 1,
+    "pending": 0,
+    "failures": 5,
+    "start": "2021-09-28T15:03:09.967Z",
+    "end": "2021-09-28T15:05:38.007Z",
+    "duration": 148040,
+    "testsRegistered": 6,
+    "passPercent": 16.666666666666664,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7441954a-9bc1-4ec9-aca8-892f0a7947ab",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d5de839-266f-4301-a256-60d27b2ec63e",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b8435273-534c-43a6-ba9f-29694b8fc640",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                  "title": "Borders",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Toggles Style/Borders successfully",
+                      "fullTitle": "Properties panel tests Style Borders Toggles Style/Borders successfully",
+                      "timedOut": null,
+                      "duration": 4620,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Dimensions');\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Borders');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Width').should('not.exist');\n});\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Borders');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Width').should('exist');\n});",
+                      "err": {},
+                      "uuid": "20d53921-80c1-4aec-bb5b-13bd2187f8d1",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-top-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-top-width successfully",
+                      "timedOut": null,
+                      "duration": 12128,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().click();\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('16');\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').should('be.visible').next().children().last().type(\"pink\");\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().last().click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-top', '16px dotted rgb(255, 192, 203)');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-start-2 col-span-1 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-start-2 col-span-1 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1010:56)",
+                        "diff": null
+                      },
+                      "uuid": "1927dc26-0987-447e-bd4e-99950ecb1462",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-left-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-left-width successfully",
+                      "timedOut": null,
+                      "duration": 12078,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().next().click();\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('15');\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"yellow\");\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().last().prev().click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-left', '15px dashed rgb(255, 255, 0)');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1027:63)",
+                        "diff": null
+                      },
+                      "uuid": "aae4f743-9881-4428-bbf8-2131010ae17f",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-right-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-right-width successfully",
+                      "timedOut": null,
+                      "duration": 12136,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().next().next().next().click();\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('15');\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"red\");\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().first().next().click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-right-color', 'rgb(255, 0, 0)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-right-width', '15px');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1044:77)",
+                        "diff": null
+                      },
+                      "uuid": "8d4a6605-3277-47d0-abc8-928d3ed3918e",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-bottom-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-bottom-width successfully",
+                      "timedOut": null,
+                      "duration": 12279,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().last().click();\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('12');\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"orange\");\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-color', 'rgb(255, 165, 0)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-width', '12px');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 col-start-2 row-start-3 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 col-start-2 row-start-3 w-6 h-6 flex items-center justify-center rounded-md text-grey-200\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1062:55)",
+                        "diff": null
+                      },
+                      "uuid": "7bfad195-652f-46b5-a030-212c9b20521a",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-width successfully",
+                      "timedOut": null,
+                      "duration": 12438,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().last().prev().prev().click();\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('12');\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"blue\");\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-color', 'rgb(0, 0, 255)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-width', '12px');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center  rounded-md text-white\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"col-span-1 row-start-2 w-6 h-6 flex items-center justify-center  rounded-md text-white\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1077:69)",
+                        "diff": null
+                      },
+                      "uuid": "bc99bfae-e039-4c2d-945e-97580adbc219",
+                      "parentUUID": "50a3cad8-1655-4bb5-9bb8-df1269e64829",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "20d53921-80c1-4aec-bb5b-13bd2187f8d1"
+                  ],
+                  "failures": [
+                    "1927dc26-0987-447e-bd4e-99950ecb1462",
+                    "aae4f743-9881-4428-bbf8-2131010ae17f",
+                    "8d4a6605-3277-47d0-abc8-928d3ed3918e",
+                    "7bfad195-652f-46b5-a030-212c9b20521a",
+                    "bc99bfae-e039-4c2d-945e-97580adbc219"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 65679,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

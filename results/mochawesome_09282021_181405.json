@@ -1,0 +1,222 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 1,
+    "failures": -1,
+    "start": "2021-09-28T17:13:53.879Z",
+    "end": "2021-09-28T17:14:05.743Z",
+    "duration": 11864,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 14.285714285714285,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "597bf88b-ae35-4fd0-9265-950402bc5ff1",
+      "title": "",
+      "fullFile": "cypress/tests/welcomePage.spec.ts",
+      "file": "cypress/tests/welcomePage.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+          "title": "Welcome page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The 4D logo image and 'Studio' word should exist",
+              "fullTitle": "Welcome page tests The 4D logo image and 'Studio' word should exist",
+              "timedOut": null,
+              "duration": 2332,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_header]').within(function () {\n    cy.get('img').should('be.visible');\n    cy.get('h1').contains(\"Studio\").should('be.visible');\n});",
+              "err": {},
+              "uuid": "87640b34-9ce8-4801-8c84-f4e95603c46d",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new webform",
+              "fullTitle": "Welcome page tests Creates a new webform",
+              "timedOut": null,
+              "duration": 2186,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(1)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('wb_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('WebForms');\nExplorerObjectModel_1.explorer.getSearch().within(function () {\n    cy.get('input').type('wb_created_from_welcomePage', { force: true });\n});\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('wb_created_from_welcomePage').should('exist');\n    cy.contains('Tabs').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"wb_created_from_welcomePage\")\n    .trigger(\"mouseover\", { force: true })\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {},
+              "uuid": "e540eb73-7d68-4812-90de-2a5cac50b09d",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new class",
+              "fullTitle": "Welcome page tests Creates a new class",
+              "timedOut": null,
+              "duration": 2266,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(3)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('class_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Classes');\n//explorer.getSearch().click({force: true}).type('class_created_from_welcomePage', {force: true})\nExplorerObjectModel_1.explorer.getSearch().within(function () {\n    cy.get('input').type('class_created_from_welcomePage', { force: true });\n});\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('class_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"class_created_from_welcomePage\")\n    .trigger(\"mouseover\", { force: true })\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {},
+              "uuid": "2fbe4baf-1822-492d-922b-e741745d3d02",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new method",
+              "fullTitle": "Welcome page tests Creates a new method",
+              "timedOut": null,
+              "duration": 2011,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(4)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('method_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Methods');\n//explorer.getSearch().click({force: true}).type('method_created_from_welcomePage', {force: true})\nExplorerObjectModel_1.explorer.getSearch().within(function () {\n    cy.get('input').type('method_created_from_welcomePage', { force: true });\n});\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('method_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"method_created_from_welcomePage\")\n    .trigger(\"mouseover\", { force: true })\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {},
+              "uuid": "b1df6e3f-65b7-47f4-97f3-e1b85a9bb90d",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recent Files section holds the files that have been opened or modified recently",
+              "fullTitle": "Welcome page tests Recent Files section holds the files that have been opened or modified recently",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "5a38450b-3f29-4a1a-8c9a-bb2643a9ebd8",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "What's new section; the video exists",
+              "fullTitle": "Welcome page tests What's new section; the video exists",
+              "timedOut": null,
+              "duration": 107,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"What's new\").should('be.visible');\ncy.get('[data-cy=actionsPanel_WhatNew]').within(function () {\n    cy.get('iframe').should('have.attr', 'src', 'https://www.youtube.com/embed/0d_a-9iNV8s');\n});",
+              "err": {},
+              "uuid": "1b54a76b-df06-43ee-85b1-cdcf86625a52",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "the version number and build date are visible",
+              "fullTitle": "Welcome page tests the version number and build date are visible",
+              "timedOut": null,
+              "duration": 310,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(1)').contains(/^[v]\\d\\.\\d\\.\\d/gm);\n//cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d/)\ncy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d\\s[PA][M]/);",
+              "err": {},
+              "uuid": "60a86f0c-3b9d-4129-8aab-98c053d39c01",
+              "parentUUID": "08c6df6e-1d29-46d3-8bbb-d4a4dee72c55",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "87640b34-9ce8-4801-8c84-f4e95603c46d",
+            "e540eb73-7d68-4812-90de-2a5cac50b09d",
+            "2fbe4baf-1822-492d-922b-e741745d3d02",
+            "b1df6e3f-65b7-47f4-97f3-e1b85a9bb90d",
+            "1b54a76b-df06-43ee-85b1-cdcf86625a52",
+            "60a86f0c-3b9d-4129-8aab-98c053d39c01"
+          ],
+          "failures": [],
+          "pending": [
+            "5a38450b-3f29-4a1a-8c9a-bb2643a9ebd8"
+          ],
+          "skipped": [],
+          "duration": 9212,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

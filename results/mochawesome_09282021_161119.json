@@ -1,0 +1,245 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-28T15:10:38.733Z",
+    "end": "2021-09-28T15:11:19.200Z",
+    "duration": 40467,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc0e659f-f54e-4e0a-81eb-751aabd9cf8f",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "30e6d8a8-23a2-4fd7-ae98-7d0a638a04f6",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e006b97c-0af4-427f-b174-3662f2a050b0",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                  "title": "Borders",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Toggles Style/Borders successfully",
+                      "fullTitle": "Properties panel tests Style Borders Toggles Style/Borders successfully",
+                      "timedOut": null,
+                      "duration": 4399,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Dimensions');\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Borders');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Width').should('not.exist');\n});\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Borders');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Width').should('exist');\n});",
+                      "err": {},
+                      "uuid": "23b4e883-a094-41c5-aab6-205e510b59b8",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-top-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-top-width successfully",
+                      "timedOut": null,
+                      "duration": 12113,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().click({ force: true });\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('16', { force: true });\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').should('be.visible').next().children().last().type(\"pink\", { force: true });\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().last().click({ force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-top', '16px dotted rgb(255, 192, 203)');",
+                      "err": {
+                        "message": "AssertionError: Timed out retrying after 10000ms: expected '<label.text-xs.w-20.mr-2.opacity-70.flex.items-center.text-grey-50>' to be 'visible'\n\nThis element `<label.text-xs.w-20.mr-2.opacity-70.flex.items-center.text-grey-50>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`",
+                        "estack": "AssertionError: Timed out retrying after 10000ms: expected '<label.text-xs.w-20.mr-2.opacity-70.flex.items-center.text-grey-50>' to be 'visible'\n\nThis element `<label.text-xs.w-20.mr-2.opacity-70.flex.items-center.text-grey-50>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:1016:46)",
+                        "diff": null
+                      },
+                      "uuid": "769774c3-dca0-4053-a82b-2e1189442b70",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-left-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-left-width successfully",
+                      "timedOut": null,
+                      "duration": 2397,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().next().click({ force: true });\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('15', { force: true });\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"yellow\", { force: true });\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().last().prev().click({ force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-left', '15px dashed rgb(255, 255, 0)');",
+                      "err": {},
+                      "uuid": "df8a2ddb-ec82-47fc-a594-9367167ce1a1",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-right-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-right-width successfully",
+                      "timedOut": null,
+                      "duration": 1985,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().first().next().next().next().click({ force: true });\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('15', { force: true });\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"red\", { force: true });\n    });\n    cy.get('.block > :nth-child(3)').within(function () {\n        cy.contains('Style').next().children().first().next().click({ force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-right-color', 'rgb(255, 0, 0)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-right-width', '15px');",
+                      "err": {},
+                      "uuid": "e960fbf0-ce57-4ac4-b2e9-24962329617f",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-bottom-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-bottom-width successfully",
+                      "timedOut": null,
+                      "duration": 1852,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().last().click({ force: true });\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('12', { force: true });\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"orange\", { force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-color', 'rgb(255, 165, 0)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-width', '12px');",
+                      "err": {},
+                      "uuid": "98b9abe2-0d0d-4956-8206-5f35461c364e",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-width successfully",
+                      "fullTitle": "Properties panel tests Style Borders Makes a border-width successfully",
+                      "timedOut": null,
+                      "duration": 1843,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .flex-col')\n        .children().children().last().prev().prev().click({ force: true });\n    cy.get(':nth-child(7) > :nth-child(2) > .bg-grey-600 > .block > .justify-start')\n        .within(function () {\n        cy.get('input').type('12', { force: true });\n    });\n    cy.get('.block > .justify-between').within(function () {\n        cy.contains('Color').next().children().last().type(\"blue\", { force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-color', 'rgb(0, 0, 255)');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-width', '12px');",
+                      "err": {},
+                      "uuid": "354f6e98-92d0-46cd-aec8-b416f14e4d14",
+                      "parentUUID": "440e09fa-6b8d-431f-b700-e65f96015d79",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "23b4e883-a094-41c5-aab6-205e510b59b8",
+                    "df8a2ddb-ec82-47fc-a594-9367167ce1a1",
+                    "e960fbf0-ce57-4ac4-b2e9-24962329617f",
+                    "98b9abe2-0d0d-4956-8206-5f35461c364e",
+                    "354f6e98-92d0-46cd-aec8-b416f14e4d14"
+                  ],
+                  "failures": [
+                    "769774c3-dca0-4053-a82b-2e1189442b70"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 24589,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

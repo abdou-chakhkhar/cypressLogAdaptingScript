@@ -1,0 +1,307 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 1,
+    "pending": 0,
+    "failures": 7,
+    "start": "2021-09-28T14:29:18.985Z",
+    "end": "2021-09-28T14:32:21.259Z",
+    "duration": 182274,
+    "testsRegistered": 8,
+    "passPercent": 12.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3a3a40b-d000-4a35-b17b-f0618b1bc5f6",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85b12bdf-dcdb-4147-929b-54c8a068b3d4",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "334c3006-c7df-4bd5-947b-5109b7cd1108",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                  "title": "Font",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Toggles Style/Font section successfully",
+                      "fullTitle": "Properties panel tests Style Font Toggles Style/Font section successfully",
+                      "timedOut": null,
+                      "duration": 4341,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Font');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').should('not.exist');\n});\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Font');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').should('exist');\n});",
+                      "err": {},
+                      "uuid": "d5ea5a27-4e29-4e22-9066-a3ca27fe6e43",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Chooses a font family and remove it successfully",
+                      "fullTitle": "Properties panel tests Style Font Chooses a font family and remove it successfully",
+                      "timedOut": null,
+                      "duration": 12069,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').next().click();\n    cy.contains('Arial').click();\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-family', 'Arial');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').next().within(function () {\n        cy.get(':nth-child(1) > .css-8mmkcg').click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('not.have.css', 'font-family', 'Arial');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<div class=\" css-1akvy1b-container\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<div class=\" css-1akvy1b-container\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:928:50)",
+                        "diff": null
+                      },
+                      "uuid": "796d3d86-f091-41f7-88b6-53b8ba1de1cd",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Selects the Weight and remove it successfully",
+                      "fullTitle": "Properties panel tests Style Font Selects the Weight and remove it successfully",
+                      "timedOut": null,
+                      "duration": 12021,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Weight').next().click();\n    cy.contains('300').click();\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-weight', '300');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Weight').next().within(function () {\n        cy.get(':nth-child(1) > .css-8mmkcg').click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('not.have.css', 'font-weight', '300');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<div class=\" css-1akvy1b-container\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<div class=\" css-1akvy1b-container\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:941:50)",
+                        "diff": null
+                      },
+                      "uuid": "0fbaf668-959a-41c1-96cc-4d8a1bd3cf75",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Precises Size and selects units successfully",
+                      "fullTitle": "Properties panel tests Style Font Precises Size and selects units successfully",
+                      "timedOut": null,
+                      "duration": 12102,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').next().type('15');\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-size', '15px');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').next().children().last().click();\n});\ncy.get('#downshift-6-item-1').click();\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-size', '240px');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<div class=\"flex rounded-md relative h-6 w-16 \">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<div class=\"flex rounded-md relative h-6 w-16 \">...</div>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:954:48)",
+                        "diff": null
+                      },
+                      "uuid": "d224eef4-dff1-4edb-8922-65d324b0c9bc",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Align works successfully",
+                      "fullTitle": "Properties panel tests Style Font Align works successfully",
+                      "timedOut": null,
+                      "duration": 12083,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Align').next().children().first().next().click();\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-align', 'center');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:965:75)",
+                        "diff": null
+                      },
+                      "uuid": "2147e56a-99b5-4657-bfca-d230e7857bd3",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Decoration works successfully",
+                      "fullTitle": "Properties panel tests Style Font Decoration works successfully",
+                      "timedOut": null,
+                      "duration": 12411,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Decoration').next().children().first().next().click();\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-decoration-line', 'underline');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:971:80)",
+                        "diff": null
+                      },
+                      "uuid": "bfee75ac-c4b2-401b-8084-ca5a370cc27a",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Style works successfully",
+                      "fullTitle": "Properties panel tests Style Font Style works successfully",
+                      "timedOut": null,
+                      "duration": 12184,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(6) > :nth-child(2) > .bg-grey-600').within(function () {\n        cy.contains('Style').next().children().last().click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-style', 'italic');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:978:71)",
+                        "diff": null
+                      },
+                      "uuid": "127aea0b-8bea-403c-a9c8-d72178044f25",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Transform works successfully",
+                      "fullTitle": "Properties panel tests Style Font Transform works successfully",
+                      "timedOut": null,
+                      "duration": 12162,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Transform').next().children().last().click();\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-transform', 'lowercase');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:985:71)",
+                        "diff": null
+                      },
+                      "uuid": "7adf1a1f-6fab-43d6-a37b-1e3dcfc2073a",
+                      "parentUUID": "4c436bb7-e70f-4930-b7cb-5bdc0b8a3c5c",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "d5ea5a27-4e29-4e22-9066-a3ca27fe6e43"
+                  ],
+                  "failures": [
+                    "796d3d86-f091-41f7-88b6-53b8ba1de1cd",
+                    "0fbaf668-959a-41c1-96cc-4d8a1bd3cf75",
+                    "d224eef4-dff1-4edb-8922-65d324b0c9bc",
+                    "2147e56a-99b5-4657-bfca-d230e7857bd3",
+                    "bfee75ac-c4b2-401b-8084-ca5a370cc27a",
+                    "127aea0b-8bea-403c-a9c8-d72178044f25",
+                    "7adf1a1f-6fab-43d6-a37b-1e3dcfc2073a"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 89373,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

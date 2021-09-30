@@ -1,0 +1,124 @@
+{
+    "reports": [
+        {
+            "date": "2019-01-26T23:23:53Z",
+            "database": "4DbotCPPTrace_0" , 
+            "product": {
+                "OS": "Windows 10 Pro 1809 (17763.195)",
+                "4D": "4D v17 R5 build 17R5.232656 (A1)",
+                "branch": "17R5",
+                "build": "232656",
+                "bitness": "",
+                "4D unitTest": "v0.0 build 341",
+                "plugins": [
+                    "4D for OCI",
+                    "4D Internet Commands",
+                    "4D ODBC Pro"
+                ],
+                "components": [
+                    "4D Labels",
+                    "4D Report",
+                    "4D Internal",
+                    "4D Progress",
+                    "4D SVG",
+                    "4D unitTest",
+                    "4D ViewPro",
+                    "4D Widgets",
+                    "4D WritePro Interface"
+                ]
+            },
+            "unit": {
+                "version": 2,
+                "timeout": 30,
+                "project": true,
+                "description": "Check that traces embedded in the diagnostic log by the C++ code (using XBOX_TRACE macro) are indeed visible from 4D unit tests.",
+                "developer": "emmanuel.craeymeersch@4d.com"
+            },
+            "runConfig": "4D Local mode",
+            "runCompilation": {
+                "options": {
+                    "compilationPath": 1,
+                    "warningLevel": 2,
+                    "initializeLocalVariables": 0,
+                    "rangeChecking": 1,
+                    "defaultTypeForNumerics": 1,
+                    "defaultTypeForButtons": 1,
+                    "intel32": 1,
+                    "intel64": 1
+                },
+                "duration": 0.369,
+                "result": "successful"
+            },
+            "runCompiled": {
+                "testRun": 1,
+                "testCases": [
+                    "test_XBOXTrace"
+                ],
+                "assert": 2,
+                "duration": 0.505,
+                "result": "successful"
+            },
+            "batch": "successful"
+        },
+        {
+            "date": "2019-01-26T23:23:53Z",
+            "database": "4DbotCPPTrace_0" , 
+            "product": {
+                "OS": "Windows 10 Pro 1809 (17763.195)",
+                "4D": "4D v17 R5 build 17R5.232656 (A1)",
+                "branch": "17R5",
+                "build": "232656",
+                "bitness": "",
+                "4D unitTest": "v0.0 build 341",
+                "plugins": [
+                    "4D for OCI",
+                    "4D Internet Commands",
+                    "4D ODBC Pro"
+                ],
+                "components": [
+                    "4D Labels",
+                    "4D Report",
+                    "4D Internal",
+                    "4D Progress",
+                    "4D SVG",
+                    "4D unitTest",
+                    "4D ViewPro",
+                    "4D Widgets",
+                    "4D WritePro Interface"
+                ]
+            },
+            "unit": {
+                "version": 2,
+                "timeout": 30,
+                "project": true,
+                "description": "Check that traces embedded in the diagnostic log by the C++ code (using XBOX_TRACE macro) are indeed visible from 4D unit tests.",
+                "developer": "emmanuel.craeymeersch@4d.com"
+            },
+            "runConfig": "4D Local mode",
+            "runCompilation": {
+                "options": {
+                    "compilationPath": 1,
+                    "warningLevel": 2,
+                    "initializeLocalVariables": 0,
+                    "rangeChecking": 1,
+                    "defaultTypeForNumerics": 1,
+                    "defaultTypeForButtons": 1,
+                    "intel32": 1,
+                    "intel64": 1
+                },
+                "duration": 0.369,
+                "result": "successful"
+            },
+            "runCompiled": {
+                "testRun": 1,
+                "testCases": [
+                    "test_XBOXTrace"
+                ],
+                "assert": 2,
+                "duration": 0.505,
+                "result": "successful"
+            },
+            "batch": "successful"
+        }
+    ]
+}

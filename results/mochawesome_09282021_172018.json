@@ -1,0 +1,235 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 3,
+    "pending": 1,
+    "failures": 2,
+    "start": "2021-09-28T16:20:01.340Z",
+    "end": "2021-09-28T16:20:18.551Z",
+    "duration": 17211,
+    "testsRegistered": 7,
+    "passPercent": 50,
+    "pendingPercent": 14.285714285714285,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "22fdc9d0-37b3-470b-886c-d76a251c9fe2",
+      "title": "",
+      "fullFile": "cypress/tests/welcomePage.spec.ts",
+      "file": "cypress/tests/welcomePage.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16297cad-0074-4b2a-9906-552d4e5518e5",
+          "title": "Welcome page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The 4D logo image and 'Studio' word should exist",
+              "fullTitle": "Welcome page tests The 4D logo image and 'Studio' word should exist",
+              "timedOut": null,
+              "duration": 2850,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_header]').within(function () {\n    cy.get('img').should('be.visible');\n    cy.get('h1').contains(\"Studio\").should('be.visible');\n});",
+              "err": {},
+              "uuid": "5e0cf216-ab9f-4f26-9e77-b9b8ec8ec965",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new webform",
+              "fullTitle": "Welcome page tests Creates a new webform",
+              "timedOut": null,
+              "duration": 1697,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(1)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('wb_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('WebForms');\nExplorerObjectModel_1.explorer.getSearch().click({ force: true }).type('wb_created_from_welcomePage', { force: true });\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('wb_created_from_welcomePage').should('exist');\n    cy.contains('Tabs').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"wb_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {
+                "message": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type\n    at validateTyping (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149313:72)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149602:15\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149650:67\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Object.gotValue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12354:18)\n    at Object.gotAccum (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12343:25)\n    at Object.tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromiseCtx (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11241:10)\n    at _drainQueueStep (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7923:12)\n    at _drainQueue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:306:75)",
+                "diff": null
+              },
+              "uuid": "8b432a3f-699e-435e-b341-5de8f4ef4f50",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new class",
+              "fullTitle": "Welcome page tests Creates a new class",
+              "timedOut": null,
+              "duration": 1558,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(3)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('class_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Classes');\nExplorerObjectModel_1.explorer.getSearch().click({ force: true }).type('class_created_from_welcomePage', { force: true });\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('class_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"class_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {
+                "message": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type\n    at validateTyping (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149313:72)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149602:15\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149650:67\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Object.gotValue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12354:18)\n    at Object.gotAccum (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12343:25)\n    at Object.tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromiseCtx (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11241:10)\n    at _drainQueueStep (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7923:12)\n    at _drainQueue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:325:75)",
+                "diff": null
+              },
+              "uuid": "dd8e6ab7-d1f4-48c3-9f52-1f31b1d118bf",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new method",
+              "fullTitle": "Welcome page tests Creates a new method",
+              "timedOut": null,
+              "duration": 1884,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(4)').click({ force: true });\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('method_created_from_welcomePage', { force: true });\n    cy.get('.inline-flex').click({ force: true });\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Methods');\nExplorerObjectModel_1.explorer.getSearch().click({ force: true }).type('method_created_from_welcomePage', { force: true });\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('method_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"method_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click({ force: true });\ncy.contains('Confirm').click({ force: true });",
+              "err": {
+                "message": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` failed because it requires a valid typeable element.\n\nThe element typed into was:\n\n  > `<div data-cy=\"explorerSearch\" class=\"px-2 py-3 text-white\">...</div>`\n\n  A typeable element matches one of the following selectors:\n  `a[href]`\n  `area[href]`\n  `input`\n  `select`\n  `textarea`\n  `button`\n  `iframe`\n  `[tabindex]`\n  `[contenteditable]`\n\nhttps://on.cypress.io/type\n    at validateTyping (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149313:72)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149602:15\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:149650:67\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Object.gotValue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12354:18)\n    at Object.gotAccum (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:12343:25)\n    at Object.tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromiseCtx (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11241:10)\n    at _drainQueueStep (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7923:12)\n    at _drainQueue (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:344:75)",
+                "diff": null
+              },
+              "uuid": "37f9e1a7-9047-422b-aa2f-5391cef35c6a",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recent Files section holds the files that have been opened or modified recently",
+              "fullTitle": "Welcome page tests Recent Files section holds the files that have been opened or modified recently",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "3323390b-bd6a-478a-8b9d-e88e6dc44a99",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "What's new section; the video exists",
+              "fullTitle": "Welcome page tests What's new section; the video exists",
+              "timedOut": null,
+              "duration": 166,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"What's new\").should('be.visible');\ncy.get('[data-cy=actionsPanel_WhatNew]').within(function () {\n    cy.get('iframe').should('have.attr', 'src', 'https://www.youtube.com/embed/0d_a-9iNV8s');\n});",
+              "err": {},
+              "uuid": "f7c10f92-7d74-445a-9afb-3b9420ae62b0",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "the version number and build date are visible",
+              "fullTitle": "Welcome page tests the version number and build date are visible",
+              "timedOut": null,
+              "duration": 100,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(1)').contains(/^[v]\\d\\.\\d\\.\\d/gm);\n//cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d/)\ncy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d\\s[PA][M]/);",
+              "err": {},
+              "uuid": "80aa4580-851f-4a47-b014-0063426fc1e9",
+              "parentUUID": "16297cad-0074-4b2a-9906-552d4e5518e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e0cf216-ab9f-4f26-9e77-b9b8ec8ec965",
+            "f7c10f92-7d74-445a-9afb-3b9420ae62b0",
+            "80aa4580-851f-4a47-b014-0063426fc1e9"
+          ],
+          "failures": [
+            "8b432a3f-699e-435e-b341-5de8f4ef4f50",
+            "dd8e6ab7-d1f4-48c3-9f52-1f31b1d118bf",
+            "37f9e1a7-9047-422b-aa2f-5391cef35c6a"
+          ],
+          "pending": [
+            "3323390b-bd6a-478a-8b9d-e88e6dc44a99"
+          ],
+          "skipped": [],
+          "duration": 8255,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

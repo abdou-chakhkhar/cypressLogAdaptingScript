@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-28T14:21:57.791Z",
+    "end": "2021-09-28T14:22:27.872Z",
+    "duration": 30081,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ef26fea3-da25-48c6-b658-3c91001cc0c3",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5653a6fa-8517-4ab0-9af9-0dba6defb33a",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "fddc04fb-3ac4-48ae-947e-1b9b8a875dea",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "26179168-3ad3-4e2c-94e3-bec49a605255",
+                  "title": "Appearance",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Dispaly propertie: display flex works fine",
+                      "fullTitle": "Properties panel tests Style Appearance Dispaly propertie: display flex works fine",
+                      "timedOut": null,
+                      "duration": 12281,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Display').next().children().first().next().click({ force: true });\n    cy.contains('Direction').next().within(function () {\n        cy.get('input').type('vertical').type('{enter}');\n    });\n    // Horizontal XXXXXXXXXXXXXXXXXX\n    cy.contains('Justify').next().children().first().next().click({ force: true });\n    cy.contains('Align').next().children().first().next().click({ force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'display', 'flex');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'flex-direction', 'column');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'justify-content', 'flex-end');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'align-items', 'end');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<input autocapitalize=\"none\" autocomplete=\"off\" autocorrect=\"off\" id=\"react-select-8-input\" spellcheck=\"false\" tabindex=\"0\" type=\"text\" aria-autocomplete=\"list\" value=\"\" style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\">`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<input autocapitalize=\"none\" autocomplete=\"off\" autocorrect=\"off\" id=\"react-select-8-input\" spellcheck=\"false\" tabindex=\"0\" type=\"text\" aria-autocomplete=\"list\" value=\"\" style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\">`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:885:41)",
+                        "diff": null
+                      },
+                      "uuid": "8b9bebeb-16db-46ea-82a9-79975d5b9aa3",
+                      "parentUUID": "26179168-3ad3-4e2c-94e3-bec49a605255",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [
+                    "8b9bebeb-16db-46ea-82a9-79975d5b9aa3"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 12281,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

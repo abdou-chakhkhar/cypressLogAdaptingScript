@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-28T14:24:34.950Z",
+    "end": "2021-09-28T14:24:42.055Z",
+    "duration": 7105,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3656aa5-9794-4e6c-9c62-58e512b8561e",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d45e91a-ed9a-44eb-b073-ef531258b4ea",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0d1c4af4-a44c-4bac-976e-27e064fe42bc",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "01a41f82-cb35-450e-bdbd-05547261e364",
+                  "title": "Appearance",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Dispaly propertie: display flex works fine",
+                      "fullTitle": "Properties panel tests Style Appearance Dispaly propertie: display flex works fine",
+                      "timedOut": null,
+                      "duration": 5381,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Display').next().children().first().next().click({ force: true });\n    cy.contains('Direction').next().within(function () {\n        cy.get('input').type('vertical', { force: true }).type('{enter}');\n    });\n    // Horizontal XXXXXXXXXXXXXXXXXX\n    cy.contains('Justify').next().children().first().next().click({ force: true });\n    cy.contains('Align').next().children().first().next().click({ force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'display', 'flex');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'flex-direction', 'column');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'justify-content', 'flex-end');\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'align-items', 'end');",
+                      "err": {},
+                      "uuid": "75a7f013-7a68-4bba-b7b5-027277243dc3",
+                      "parentUUID": "01a41f82-cb35-450e-bdbd-05547261e364",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "75a7f013-7a68-4bba-b7b5-027277243dc3"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 5381,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-28T14:59:09.197Z",
+    "end": "2021-09-28T14:59:51.992Z",
+    "duration": 42795,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c6bb39b6-8012-4fc9-8e2d-c51fc7b58317",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0f065e51-df77-4fa5-b01a-0784f4271710",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "6c1a8d7d-190a-459e-bba8-629c0629b077",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                  "title": "Font",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Toggles Style/Font section successfully",
+                      "fullTitle": "Properties panel tests Style Font Toggles Style/Font section successfully",
+                      "timedOut": null,
+                      "duration": 4583,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Font');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').should('not.exist');\n});\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Font');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').should('exist');\n});",
+                      "err": {},
+                      "uuid": "39e5f684-ef59-4bcc-b0ed-ea335745bdca",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Chooses a font family and remove it successfully",
+                      "fullTitle": "Properties panel tests Style Font Chooses a font family and remove it successfully",
+                      "timedOut": null,
+                      "duration": 1938,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').next().within(function () {\n        cy.get('input').type('Arial', { force: true }).type('{enter}');\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-family', 'Arial');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Family').next().within(function () {\n        cy.get(':nth-child(1) > .css-8mmkcg').click({ force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('not.have.css', 'font-family', 'Arial');",
+                      "err": {},
+                      "uuid": "30ede7ac-75e8-4832-88de-938a409d54dd",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Selects the Weight and remove it successfully",
+                      "fullTitle": "Properties panel tests Style Font Selects the Weight and remove it successfully",
+                      "timedOut": null,
+                      "duration": 1744,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Weight').next().within(function () {\n        cy.get('input').type('300', { force: true }).type('{enter}');\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-weight', '300');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Weight').next().within(function () {\n        cy.get(':nth-child(1) > .css-8mmkcg').click({ force: true });\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('not.have.css', 'font-weight', '300');",
+                      "err": {},
+                      "uuid": "c1f268af-3009-496d-bcf4-0b30e703985b",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Precises Size and selects units successfully",
+                      "fullTitle": "Properties panel tests Style Font Precises Size and selects units successfully",
+                      "timedOut": null,
+                      "duration": 1856,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').next().within(function () {\n        cy.get('input').type('15', { force: true }).type('{enter}');\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-size', '15px');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').next().children().last().click({ force: true });\n});\ncy.get('#downshift-6-toggle-button').click({ force: true });\ncy.get('#downshift-6-item-1').click({ force: true });\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-size', '240px');",
+                      "err": {},
+                      "uuid": "5df78df3-7207-44e0-8190-62e1614db260",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Align works successfully",
+                      "fullTitle": "Properties panel tests Style Font Align works successfully",
+                      "timedOut": null,
+                      "duration": 1341,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Align').next().children().first().next().click({ force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-align', 'center');",
+                      "err": {},
+                      "uuid": "03a20b16-afcc-4fd4-a065-8ac3d404f108",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Decoration works successfully",
+                      "fullTitle": "Properties panel tests Style Font Decoration works successfully",
+                      "timedOut": null,
+                      "duration": 1365,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Decoration').next().children().first().next().click({ force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-decoration-line', 'underline');",
+                      "err": {},
+                      "uuid": "a7dbd5ca-cca5-4c00-9fdd-aa18571eb68d",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Style works successfully",
+                      "fullTitle": "Properties panel tests Style Font Style works successfully",
+                      "timedOut": null,
+                      "duration": 12104,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(6) > :nth-child(2) > .bg-grey-600').within(function () {\n        cy.contains('Style').next().children().last().click();\n    });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'font-style', 'italic');",
+                      "err": {
+                        "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                        "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<label class=\"rounded p-1 hover:bg-gray-600 css-0\">...</label>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\propertiesPanel.spec.ts:983:71)",
+                        "diff": null
+                      },
+                      "uuid": "1d30bafc-dc18-4f71-a4f5-b63b6950082d",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Transform works successfully",
+                      "fullTitle": "Properties panel tests Style Font Transform works successfully",
+                      "timedOut": null,
+                      "duration": 2145,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Transform').next().children().last().click({ force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'text-transform', 'lowercase');",
+                      "err": {},
+                      "uuid": "11d55ced-7371-4f53-846c-e5f05c1e9ab1",
+                      "parentUUID": "08f0b181-6c9b-4b29-8ae1-f659421ea27b",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "39e5f684-ef59-4bcc-b0ed-ea335745bdca",
+                    "30ede7ac-75e8-4832-88de-938a409d54dd",
+                    "c1f268af-3009-496d-bcf4-0b30e703985b",
+                    "5df78df3-7207-44e0-8190-62e1614db260",
+                    "03a20b16-afcc-4fd4-a065-8ac3d404f108",
+                    "a7dbd5ca-cca5-4c00-9fdd-aa18571eb68d",
+                    "11d55ced-7371-4f53-846c-e5f05c1e9ab1"
+                  ],
+                  "failures": [
+                    "1d30bafc-dc18-4f71-a4f5-b63b6950082d"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 27076,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

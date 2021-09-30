@@ -1,0 +1,240 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-28T15:26:05.273Z",
+    "end": "2021-09-28T15:26:44.415Z",
+    "duration": 39142,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95ff0ea6-f970-4447-864b-9317d508410e",
+      "title": "",
+      "fullFile": "cypress/tests/propertiesPanel.spec.ts",
+      "file": "cypress/tests/propertiesPanel.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9901fe12-820e-49f6-bf54-fb485bc01859",
+          "title": "Properties panel tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "262c630c-fe7d-4236-b1fb-497c15e378f5",
+              "title": "Style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                  "title": "Border Radius",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Toggles Style/Border Radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Toggles Style/Border Radius successfully",
+                      "timedOut": null,
+                      "duration": 4734,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Font');\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Border Radius');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').should('not.exist');\n});\npropertiesPanelObjectModel_1.proprietiesPanel.toggleSection('Border Radius');\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.contains('Size').should('exist');\n});",
+                      "err": {},
+                      "uuid": "413ad043-6681-4544-96f3-f5edd0c30268",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-top-right-radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Makes a border-top-right-radius successfully",
+                      "timedOut": null,
+                      "duration": 6190,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//proprietiesPanel.toggleElements(['Font', 'Appearance', 'Dimensions'])\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .flex-col').children().children().first().click({ force: true });\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .block > .mb-2 > .relative > .p-1').type('200', { force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-top-right-radius', '200px');",
+                      "err": {},
+                      "uuid": "093d4e98-dd3e-4d33-b70a-4ee276fa2cb5",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-bottom-right-radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Makes a border-bottom-right-radius successfully",
+                      "timedOut": null,
+                      "duration": 6769,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//proprietiesPanel.toggleElements(['Font', 'Appearance', 'Dimensions'])\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .flex-col').children().children().first().next().click({ force: true });\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .block > .mb-2 > .relative > .p-1').type('200', { force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-right-radius', '200px');",
+                      "err": {},
+                      "uuid": "0d842ef9-dd9b-4240-94e3-88b47b8736de",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-top-left-radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Makes a border-top-left-radius successfully",
+                      "timedOut": null,
+                      "duration": 6935,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//proprietiesPanel.toggleElements(['Font', 'Appearance', 'Dimensions'])\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .flex-col').children().children().first().next().next().click({ force: true });\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .block > .mb-2 > .relative > .p-1').type('200', { force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-top-left-radius', '200px');",
+                      "err": {},
+                      "uuid": "61b65808-13b6-4261-9b33-a1f2ee354d9f",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-bottom-left-radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Makes a border-bottom-left-radius successfully",
+                      "timedOut": null,
+                      "duration": 7314,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//proprietiesPanel.toggleElements(['Font', 'Appearance', 'Dimensions'])\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .flex-col').children().children().last().prev().click({ force: true });\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .block > .mb-2 > .relative > .p-1').type('200', { force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-bottom-left-radius', '200px');",
+                      "err": {},
+                      "uuid": "68831140-656e-450f-b5cb-e12325773850",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Makes a border-radius successfully",
+                      "fullTitle": "Properties panel tests Style Border Radius Makes a border-radius successfully",
+                      "timedOut": null,
+                      "duration": 3428,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "propertiesPanelObjectModel_1.proprietiesPanel.toggleElements(['Font', 'Appearance', 'Dimensions']);\npropertiesPanelObjectModel_1.proprietiesPanel.getPropPanel().within(function () {\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .flex-col').children().children().last().click({ force: true });\n    cy.get(':nth-child(8) > :nth-child(2) > .bg-grey-600 > .block > .mb-2 > .relative > .p-1').type('200', { force: true });\n});\nWebFormEditorObjectModel_1.webFormEditor.getWebFomEditorComp().should('have.css', 'border-radius', '200px');",
+                      "err": {},
+                      "uuid": "6990616e-5332-4cdb-8edf-5eb38480ebb2",
+                      "parentUUID": "2e7d7957-b576-45ce-a1a0-10d4101518ab",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "413ad043-6681-4544-96f3-f5edd0c30268",
+                    "093d4e98-dd3e-4d33-b70a-4ee276fa2cb5",
+                    "0d842ef9-dd9b-4240-94e3-88b47b8736de",
+                    "61b65808-13b6-4261-9b33-a1f2ee354d9f",
+                    "68831140-656e-450f-b5cb-e12325773850",
+                    "6990616e-5332-4cdb-8edf-5eb38480ebb2"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 35370,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

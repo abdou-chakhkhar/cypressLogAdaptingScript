@@ -1,0 +1,235 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 3,
+    "pending": 1,
+    "failures": 2,
+    "start": "2021-09-28T16:13:40.848Z",
+    "end": "2021-09-28T16:14:56.285Z",
+    "duration": 75437,
+    "testsRegistered": 7,
+    "passPercent": 50,
+    "pendingPercent": 14.285714285714285,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "fcd0cec1-4428-4a95-93b2-a0828821d29c",
+      "title": "",
+      "fullFile": "cypress/tests/welcomePage.spec.ts",
+      "file": "cypress/tests/welcomePage.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb26d05c-7e27-491b-9e41-7210067743d9",
+          "title": "Welcome page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The 4D logo image and 'Studio' word should exist",
+              "fullTitle": "Welcome page tests The 4D logo image and 'Studio' word should exist",
+              "timedOut": null,
+              "duration": 2677,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_header]').within(function () {\n    cy.get('img').should('be.visible');\n    cy.get('h1').contains(\"Studio\").should('be.visible');\n});",
+              "err": {},
+              "uuid": "21b1fb9c-b9a4-4417-870c-f51f488e6b74",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new webform",
+              "fullTitle": "Welcome page tests Creates a new webform",
+              "timedOut": null,
+              "duration": 10790,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(1)').click();\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('wb_created_from_welcomePage');\n    cy.get('.inline-flex').click();\n});\nExplorerObjectModel_1.explorer.getToNodeByName('WebForms');\nExplorerObjectModel_1.explorer.getSearch().click().type('wb_created_from_welcomePage');\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('wb_created_from_welcomePage').should('exist');\n    cy.contains('Tabs').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"wb_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click();\ncy.contains('Confirm').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200  focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200  focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:299:45)",
+                "diff": null
+              },
+              "uuid": "9e237467-9a68-474e-9e44-65b9458712db",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new class",
+              "fullTitle": "Welcome page tests Creates a new class",
+              "timedOut": null,
+              "duration": 10894,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(3)').click();\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('class_created_from_welcomePage');\n    cy.get('.inline-flex').click();\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Classes');\nExplorerObjectModel_1.explorer.getSearch().click().type('class_created_from_welcomePage');\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('class_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"class_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click();\ncy.contains('Confirm').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200 focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md  px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200 focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md  px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:318:45)",
+                "diff": null
+              },
+              "uuid": "80fe2452-f837-4369-8bec-86818904fbe5",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new method",
+              "fullTitle": "Welcome page tests Creates a new method",
+              "timedOut": null,
+              "duration": 10898,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_createNewComp]').within(function () {\n    cy.get('.grid > :nth-child(4)').click();\n});\ncy.get('.min-h-screen > .w-full').within(function () {\n    cy.get('.mt-2 > .bg-grey-300').clear().type('method_created_from_welcomePage');\n    cy.get('.inline-flex').click();\n});\nExplorerObjectModel_1.explorer.getToNodeByName('Methods');\nExplorerObjectModel_1.explorer.getSearch().click().type('method_created_from_welcomePage');\nExplorerObjectModel_1.explorer.getTreeNodes().within(function () {\n    cy.contains('method_created_from_welcomePage').should('exist');\n    cy.contains('CLIENTS').should('not.exist');\n});\nExplorerObjectModel_1.explorer.getToElmtByName(\"method_created_from_welcomePage\")\n    .trigger(\"mouseover\")\n    .get('.css-1yg7lz6').last().click();\ncy.contains('Confirm').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200 focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md  px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:\n\n`<button class=\"group hover:border hover:border-blue-200 focus:outline-none text-grey-100 flex flex-col items-center justify-center space-y-4 w-full h-40 cursor-pointer bg-grey-300 rounded-md  px-4\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"absolute inset-0 z-40\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:148556:26)\n    at ensureDescendents (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135786:8)\n    at ensureDescendentsAndScroll (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135793:14)\n    at ensureElIsNotCovered (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:153236:12)\n    at https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://192.168.221.45:7443/__cypress/runner/cypress_runner.js:11329:18)\nFrom Your Spec Code:\n    at Context.eval (https://192.168.221.45:7443/__cypress/tests?p=cypress\\tests\\welcomePage.spec.ts:337:45)",
+                "diff": null
+              },
+              "uuid": "f279e4ba-0815-4c56-b024-3afad8280e36",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recent Files section holds the files that have been opened or modified recently",
+              "fullTitle": "Welcome page tests Recent Files section holds the files that have been opened or modified recently",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "3f310f66-cda0-4d3d-9053-3d5456f15d2c",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "What's new section; the video exists",
+              "fullTitle": "Welcome page tests What's new section; the video exists",
+              "timedOut": null,
+              "duration": 386,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"What's new\").should('be.visible');\ncy.get('[data-cy=actionsPanel_WhatNew]').within(function () {\n    cy.get('iframe').should('have.attr', 'src', 'https://www.youtube.com/embed/0d_a-9iNV8s');\n});",
+              "err": {},
+              "uuid": "4dc67cfb-6c17-4cbb-9866-d69b65ae382b",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "the version number and build date are visible",
+              "fullTitle": "Welcome page tests the version number and build date are visible",
+              "timedOut": null,
+              "duration": 263,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(1)').contains(/^[v]\\d\\.\\d\\.\\d/gm);\n//cy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d/)\ncy.get('[data-cy=actionsPanel_footer_v_build_date] > :nth-child(2)').contains(/^\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\s\\d\\d\\:\\d\\d\\:\\d\\d\\s[PA][M]/);",
+              "err": {},
+              "uuid": "a6181068-edbe-4b2e-863d-e4a21f8523c4",
+              "parentUUID": "cb26d05c-7e27-491b-9e41-7210067743d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "21b1fb9c-b9a4-4417-870c-f51f488e6b74",
+            "4dc67cfb-6c17-4cbb-9866-d69b65ae382b",
+            "a6181068-edbe-4b2e-863d-e4a21f8523c4"
+          ],
+          "failures": [
+            "9e237467-9a68-474e-9e44-65b9458712db",
+            "80fe2452-f837-4369-8bec-86818904fbe5",
+            "f279e4ba-0815-4c56-b024-3afad8280e36"
+          ],
+          "pending": [
+            "3f310f66-cda0-4d3d-9053-3d5456f15d2c"
+          ],
+          "skipped": [],
+          "duration": 35908,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "showSkipped": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
