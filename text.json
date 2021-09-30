@@ -1,0 +1,888 @@
+{
+  "reports": [
+    {
+      "date": "2021-09-28T14:01:43.852Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T14:08:28.705Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T14:11:15.202Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T14:21:57.791Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T14:24:34.950Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T14:25:47.799Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T14:29:18.985Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T14:59:09.197Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T15:01:32.275Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T15:03:09.967Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T15:10:38.733Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T15:17:12.421Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T15:19:06.775Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T15:26:05.273Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T16:13:40.848Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T16:20:01.340Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T16:48:29.701Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T16:54:04.114Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T16:56:16.741Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-28T17:09:42.854Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Explorer Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T17:10:08.622Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "AppHeader Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T17:10:23.328Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Login tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T17:10:32.887Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-28T17:13:53.879Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-29T09:31:27.645Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Explorer Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:31:54.022Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "AppHeader Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:32:05.875Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "login tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:32:14.927Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-29T09:37:18.873Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    },
+    {
+      "date": "2021-09-29T09:51:05.292Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Explorer Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:51:36.758Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "AppHeader Tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:51:48.032Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "login tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:51:57.127Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Properties panel tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "successful"
+    },
+    {
+      "date": "2021-09-29T09:55:43.830Z",
+      "database": "WebStudioE2EProject",
+      "product": {
+        "OS": "Windows 10 Pro 1809 (17763.195)",
+        "4D": "4D v17 R5 build 17R5.232656 (A1)",
+        "branch": "17R5",
+        "build": "232656",
+        "bitness": ""
+      },
+      "unit": {
+        "description": "Welcome page tests",
+        "developer": "@4d.com"
+      },
+      "runConfig": "4D Local mode",
+      "runCompiled": {
+        "testRun": 1,
+        "testCases": [
+          "test_XBOXTrace"
+        ],
+        "assert": 2,
+        "duration": 0.505,
+        "result": "successful"
+      },
+      "batch": "failed"
+    }
+  ]
+}
